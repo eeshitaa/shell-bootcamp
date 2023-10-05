@@ -1,0 +1,15 @@
+AZURE DEVOPS
+__________________________________________________________________
+- Using queries 
+- Pipelines
+- Artifacts
+- Test cases
+- Running test cases and marking them as pass/fail
+- User Stories
+- Wiki and all markdown features
+- Dashboards and widgets
+- Board View
+- Backlog View
+- Transferring from Backlog to Sprints (Iteration)
+- User Stories and related tasks in Sprints
+- Using Agile Template instead of the the Basic one

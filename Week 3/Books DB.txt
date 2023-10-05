@@ -1,0 +1,41 @@
+Table books {
+  bookid integer [primary key]
+  title varchar
+  authorid integer
+  genre varchar
+  pubid integer
+  publication_date date
+  pages integer
+}
+
+Table authors {
+  authorid integer [primary key]
+  name varchar
+  gender char
+  countryid integer
+}
+
+Table publisher {
+  pubid integer [primary key]
+  name varchar
+  countryid integer
+}
+
+Table category {
+  catid integer [primary key]
+  genre varcar
+}
+
+Table country {
+  countryid integer [primary key]
+  country varchar
+}
+
+Ref: books.bookid > authors.authorid // many-to-one
+Ref: books.bookid - publisher.pubid
+Ref: books.bookid <> category.catid
+Ref: authors.authorid < publisher.pubid
+Ref: publisher.pubid <> category.catid
+Ref: authors.authorid < country.countryid
+Ref: publisher.pubid < country.countryid
+
